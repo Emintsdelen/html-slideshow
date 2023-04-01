@@ -18,72 +18,6 @@
 		document.getElementById("btn" + click.toString()).className = "btn btn-primary";
 	}
 	
-	function back(){
-		index -= 1;
-		
-		if (index == 0) {
-			index = 3
-			document.getElementById("img").src = "img/img3.jpg";
-			document.getElementById("btn1").className = "btn btn-secondary";
-			document.getElementById("btn2").className = "btn btn-secondary";
-			document.getElementById("btn3").className = "btn btn-primary";
-		}
-		
-		else if (index == 1) {
-			document.getElementById("img").src = "img/img1.jpg";
-			document.getElementById("btn1").className = "btn btn-primary";
-			document.getElementById("btn2").className = "btn btn-secondary";
-			document.getElementById("btn3").className = "btn btn-secondary";
-		}
-		
-		else if (index == 2) {
-			document.getElementById("img").src = "img/img2.jpg";
-			document.getElementById("btn1").className = "btn btn-secondary";
-			document.getElementById("btn2").className = "btn btn-primary";
-			document.getElementById("btn3").className = "btn btn-secondary";
-		}
-		
-		else if (index == 3) {
-			document.getElementById("img").src = "img/img3.jpg";
-			document.getElementById("btn1").className = "btn btn-secondary";
-			document.getElementById("btn2").className = "btn btn-secondary";
-			document.getElementById("btn3").className = "btn btn-primary";
-		}
-	}
-	
-	function forward(){
-		index += 1;
-		
-		if (index == 4) {
-			index = 1
-			document.getElementById("img").src = "img/img1.jpg";
-			document.getElementById("btn1").className = "btn btn-primary";
-			document.getElementById("btn2").className = "btn btn-secondary";
-			document.getElementById("btn3").className = "btn btn-secondary";
-		}
-		
-		else if (index == 1) {
-			document.getElementById("img").src = "img/img1.jpg";
-			document.getElementById("btn1").className = "btn btn-primary";
-			document.getElementById("btn2").className = "btn btn-secondary";
-			document.getElementById("btn3").className = "btn btn-secondary";
-		}
-		
-		else if (index == 2) {
-			document.getElementById("img").src = "img/img2.jpg";
-			document.getElementById("btn1").className = "btn btn-secondary";
-			document.getElementById("btn2").className = "btn btn-primary";
-			document.getElementById("btn3").className = "btn btn-secondary";
-		}
-		
-		else if (index == 3) {
-			document.getElementById("img").src = "img/img3.jpg";
-			document.getElementById("btn1").className = "btn btn-secondary";
-			document.getElementById("btn2").className = "btn btn-secondary";
-			document.getElementById("btn3").className = "btn btn-primary";
-		}
-	}
-	
 	function autoforward(){
 		index += 1;
 		
@@ -121,9 +55,7 @@
 </script>
 <body class="container-fluid bg-white">
 	<div style="text-align: center">
-		<button onClick="back()" type="button" class="btn btn-primary" style="height: 60px"><img src="img/fast-forward.png" width="20px" style="transform: rotate(180deg); float: left;"></button>
 		<img id="img" src="img/img1.jpg" width="50%" style="border-radius: 20px; border: 1px solid black;">
-		<button onClick="forward()" type="button" class="btn btn-primary" style="height: 60px"><img src="img/fast-forward.png" width="20px" style="float: left;"></button>
 		<br>
 		<button onClick="change(1)" id="btn1" type="button" class="btn btn-primary" style="width: 20px; height: 20px; border-radius: 5px;"></button>
 		<button onClick="change(2)" id="btn2" type="button" class="btn btn-secondary" style="width: 20px; height: 20px; border-radius: 5px;"></button>
